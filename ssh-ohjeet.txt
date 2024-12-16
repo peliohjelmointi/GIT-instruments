@@ -1,0 +1,7 @@
+(avaa git bash)
+ssh-keygen -t rsa -b 4096 -C "oma-ssh-avain"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa # vaihda id_rsa jos nimesit tiedoston
+ssh -T git@github.com
+
+git clone git@github.com:KAYTTAJANIMI/REPOSITORYN_NIMI.git
